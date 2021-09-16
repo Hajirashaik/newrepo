@@ -1,10 +1,5 @@
 file permisions changed
-file...
-e
-..
-
--- EOD --
-
 
 a new line added after git add.
 
+hello
