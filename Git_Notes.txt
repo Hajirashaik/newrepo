@@ -44,7 +44,12 @@ git commit -am ""
 git remote add origin url
 git remote -v
 git push origin branch_Name
-git restore --staged 
+git restore --staged
+git stash
+git stash pop
+git stash -u
+git stash -a
+git fetch
 
 Creating remote repository in github
 ===============
