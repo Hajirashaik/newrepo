@@ -211,6 +211,7 @@ Day-6
 
 #
 HEAD
+====
 
 HEAD is a pointer in git which
 	- Always points to the latest commit in the repository
