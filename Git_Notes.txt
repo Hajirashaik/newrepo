@@ -33,9 +33,10 @@ Staging Index / Stage
 
 Note: If you want to skip the staging, you need to commit all pending changes.
 Commands
-git clone https://github.com/AneesRavidKhan/DemoDir.git
+git clone https://github.com/AneesRavidKhan/TeamProject.git
 git init
 git pull url
+git fetch
 git add
 git add .
 git add --all
@@ -49,7 +50,6 @@ git stash
 git stash pop
 git stash -u
 git stash -a
-git fetch
 
 Creating remote repository in github
 ===============
@@ -211,7 +211,7 @@ Day-6
 
 #
 HEAD
-====
+=======
 
 HEAD is a pointer in git which
 	- Always points to the latest commit in the repository
