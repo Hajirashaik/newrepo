@@ -32,14 +32,18 @@ Staging Index / Stage
 	$ git commit -am "submit all pending changes"
 
 Note: If you want to skip the staging, you need to commit all pending changes.
+
 Commands
+========
 git clone https://github.com/AneesRavidKhan/TeamProject.git
 git init
 git pull url
 git fetch
-git add
+git add file_name
 git add .
 git add --all
+git config user.name ""
+git config user.email ""
 git commit -m ""
 git commit -am ""
 git remote add origin url
@@ -50,6 +54,12 @@ git stash
 git stash pop
 git stash -u
 git stash -a
+git checkout
+git branch
+git merge
+git rebase
+git log
+(git ignore)
 
 Creating remote repository in github
 ===============
@@ -153,8 +163,6 @@ Show me all logs committed by user "Ram" AND has a commit message "math function
 $ git log --author="Ram" --grep="math function"
 
 
-Day-5
-=====
 # GIT Commands
 
 1.  
@@ -179,7 +187,7 @@ Git will carry the history of old file to new file. To check complete history..
 	$ git log --follow Login1.java
 
 
-Day-6
+Day-3
 =======
 # BRANCHING
 	A. What is a branch?
@@ -218,9 +226,6 @@ HEAD is a pointer in git which
 	- Always points to parent of the next commit
 
 
-Day-7
-======
-
 # Undoing the changes:
 undo/revert local changes from source area
 	$ git checkout -- LoginWeb.java
@@ -237,28 +242,25 @@ git show b85a6e123
 	$ git diff-tree --no-commit-id --name-only -r 41a7c2a456a
 
 
-Day-8
+Day-4
 ======
 Merging:
 =========
 # FAST-FORWARD MERGE
 
 BEFORE MERGE:
--------------
-			master
+-------------			
+			 
+----C1--C2---C3  (master)
 			 |
-----C1--C2---C3
-			 |
-			 ----------C4----C5  
-								dev_1.2.3
+			 ----------C4----C5  (dev_1.2.3)								
 		
 AFTER MERGE:
--------------
- 			     			master
-			     			  |
-----C1----C2---C3------C4----C5
-		             		  |
-			     			dev_1.2.3
+-------------	     	 
+			     		
+----C1----C2---C3------C4  (master)
+		        |
+				----------C4----C5  (dev_1.2.3)
 
 
 Excercise:
